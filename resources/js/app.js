@@ -1,6 +1,7 @@
 import './bootstrap';
 import { createApp } from "vue";
-import app from "./layouts/app.vue";
+import registerForm from "./layouts/register.vue";
+import loginForm from "./layouts/login.vue";
 import vuetify from "./vuetify";
 
-createApp(app).use(vuetify).mount("#app");
+createApp(registerForm, loginForm).use(vuetify).mount("#app");

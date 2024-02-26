@@ -14,15 +14,9 @@
     </head>
     <body class="antialiased">
 
-        <div id="app"></div>
-
-        <template>
-            <div>
-                <h1>Hello world !!!</h1>
-                <v-btn color="primary">Button</v-btn>
-            </div>
-        </template>
-
+        <div id="app">
+            <login-form></login-form>
+        </div>
 
     @vite('resources/js/app.js')
     </body>

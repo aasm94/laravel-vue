@@ -33,4 +33,5 @@ Route::group([
 
 });
 
-Route::apiResource('v1/users', 'App\Http\Controllers\UsersController');
+Route::apiResource('v1/users', 'App\Http\Controllers\UsersController')->middleware('auth');
+Route::get('v1/register', 'App\Http\Controllers\UsersController@register');

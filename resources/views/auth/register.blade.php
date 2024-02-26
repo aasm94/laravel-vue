@@ -10,20 +10,14 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-
+        @vite('resources/js/app.js')
     </head>
-    <body class="antialiased">
+    <body id="app" class="antialiased">
+            <h1>register</h1>
 
-        <div id="app"></div>
-
-        <template>
-            <div>
-                <h1>Hello world !!!</h1>
-                <v-btn color="primary">Button</v-btn>
-            </div>
-        </template>
+            <register-component></register-component>
 
 
-    @vite('resources/js/app.js')
+
     </body>
 </html>
